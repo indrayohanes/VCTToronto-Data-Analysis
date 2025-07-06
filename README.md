@@ -19,4 +19,4 @@ Tampilan Data Interaktif: Pengguna dapat melihat data mentah yang digunakan untu
 Desain Responsif: Dibangun dengan layout kolom agar nyaman dilihat di berbagai ukuran layar.
 
 Result :
-![](image1.jpg)
+![](image1.png)
