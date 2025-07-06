@@ -1,21 +1,17 @@
 ﻿# VCTToronto-Data-Analysis
-📊 Valorant Analytics Streamlit Dashboard
-Sebuah dashboard interaktif yang dibuat menggunakan Streamlit untuk menganalisis dan memvisualisasikan performa pemain serta meta permainan dari data turnamen Valorant Champions Tour (VCT).
+📊 Valorant Analytics Streamlit Dashboard An interactive dashboard created using Streamlit to analyze and visualize player performance and game meta from Valorant Champions Tour (VCT) tournament data.
 
-📝 Tentang Proyek Ini
-Proyek ini bertujuan untuk mengubah data mentah dari sebuah turnamen VCT menjadi wawasan yang mudah dipahami. Dengan menggunakan Python dan library analisis data, dashboard ini menyajikan metrik-metrik kunci seperti pemain dengan performa terbaik dan role agent yang paling populer. Proyek ini dibangun sebagai portofolio untuk menunjukkan kemampuan dalam pengolahan data, analisis, dan visualisasi data interaktif.
+📝 About This Project This project aims to turn raw data from a VCT tournament into easy-to-understand insights. Using Python and data analysis libraries, the dashboard presents key metrics such as top performing players and most popular agent roles. This project was built as a portfolio to demonstrate capabilities in data processing, analysis, and interactive data visualization.
 
-🛠️ Dibuat Dengan
-Berikut adalah teknologi dan library utama yang digunakan dalam proyek ini:
+🛠️ Created With The following are the main technologies and libraries used in this project:
 
-🚀 Fitur Utama
-Analisis Performa Pemain: Menampilkan peringkat 10 pemain teratas berdasarkan Average Combat Score (ACS).
+🚀 Player Performance Analysis Key Features: Displays top 10 player rankings based on Average Combat Score (ACS).
 
-Visualisasi Meta Role: Grafik yang menunjukkan frekuensi pemilihan setiap role agent (Controller, Duelist, dll.) selama turnamen.
+Meta Role Visualization: A graph showing the frequency of selection of each role agent (Controller, Duelist, etc.) during a tournament.
 
-Tampilan Data Interaktif: Pengguna dapat melihat data mentah yang digunakan untuk analisis.
+Interactive Data View: Users can view the raw data used for analysis.
 
-Desain Responsif: Dibangun dengan layout kolom agar nyaman dilihat di berbagai ukuran layar.
+Responsive Design: Built with a column layout for comfortable viewing on various screen sizes.
 
 Result :
 ![](image1.png)
