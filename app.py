@@ -3,31 +3,22 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# --- Konfigurasi Halaman dan Judul ---
 st.set_page_config(layout="wide")
 st.title('📊 Dashboard Analisis VCT')
 st.write("Visualisasi data dari turnamen VCT berdasarkan file `vct toronto.csv`.")
 
-# --- Fungsi untuk Memuat dan Mengolah Data ---
-# Menggunakan cache agar data tidak perlu dimuat ulang setiap kali ada interaksi
 @st.cache_data
 def load_data():
     df = pd.read_csv('vct toronto.csv')
-    # Menghindari pembagian dengan nol jika ada pemain yang Deaths-nya 0
     df['KDA Ratio'] = (df['K'] + df['A']) / df['D'].replace(0, 1)
     return df
-
-# Memuat data menggunakan fungsi yang sudah dibuat
 df = load_data()
 
-# --- Garis Pemisah ---
 st.markdown("---")
 
-# --- Visualisasi Data ---
 col1, col2 = st.columns(2)
 
 with col1:
-    # --- Analisis 1: Top 10 Pemain Berdasarkan ACS ---
     st.header('🏆 Top 10 Pemain Terbaik (ACS)')
     
     top_10_players_acs = df.groupby('Player')['ACS'].mean().sort_values(ascending=False).head(10)
@@ -42,7 +33,6 @@ with col1:
     st.pyplot(fig1)
 
 with col2:
-    # --- Analisis 2: Popularitas Role Agent ---
     st.header('🗺️ Popularitas Role Agent')
 
     role_picks = df['Role'].value_counts()
@@ -56,10 +46,8 @@ with col2:
 
     st.pyplot(fig2)
 
-# --- Garis Pemisah ---
 st.markdown("---")
 
-# --- Tambahkan Filter Interaktif ---
 st.sidebar.header("Filter Data")
 selected_team = st.sidebar.selectbox('Pilih Tim:', df['Region'].unique())
 team_data = df[df['Region'] == selected_team]
