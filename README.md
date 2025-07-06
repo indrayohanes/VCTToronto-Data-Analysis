@@ -20,3 +20,5 @@ Desain Responsif: Dibangun dengan layout kolom agar nyaman dilihat di berbagai u
 
 Result :
 ![](image1.png)
+![](image2.png)
+![](image3.png)
